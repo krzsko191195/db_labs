@@ -33,7 +33,7 @@ select LAST_NAME, pensja from employee where year(DATE_OF_EMPLOYMENT) between 20
 
 -- zad 5
 
-select pensja, pensja * 0.75 `pensja netto`, pensja * 0.25 podatek from employee;
+select pensja, round(pensja * 0.75, 2) `pensja netto`, round(pensja * 0.25, 2) podatek from employee;
 select * from customer where TAX_IDENTIFIER is null;
 
 -- zad 5.3
