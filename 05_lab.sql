@@ -38,7 +38,7 @@ select * from customer where TAX_IDENTIFIER is null;
 
 -- zad 5.3
 select SHORT_NAME from customer where SHORT_NAME like "K%" or SHORT_NAME like "%ski" order by SHORT_NAME desc;
-select FULL_NAME, SHORT_NAME from customer where FULL_NAME like "K%" or FULL_NAME like "%ski" order by SHORT_NAME desc; 
+select SHORT_NAME from customer where FULL_NAME like "K%" or FULL_NAME like "%ski" order by SHORT_NAME desc; 
 
 
 -- helpers
