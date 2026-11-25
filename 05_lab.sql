@@ -35,6 +35,8 @@ select LAST_NAME, pensja from employee where year(DATE_OF_EMPLOYMENT) between 20
 
 select pensja, pensja * 0.75 `pensja netto`, pensja * 0.25 podatek from employee;
 select * from customer where TAX_IDENTIFIER is null;
+
+-- zad 5.3
 select SHORT_NAME from customer where SHORT_NAME like "K%" or SHORT_NAME like "%ski" order by SHORT_NAME desc;
 select FULL_NAME, SHORT_NAME from customer where FULL_NAME like "K%" or FULL_NAME like "%ski" order by SHORT_NAME desc; 
 
